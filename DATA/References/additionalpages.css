@@ -1,0 +1,87 @@
+p {
+	font-family: Segoe UI;
+	font-size: 16px;
+	margin: 0;
+	margin-top: 0;
+	padding: 10px;
+	padding-bottom: 0;
+	text-align: justify;
+	max-width: 80%;
+        align-items: center;
+        margin: auto;
+}
+h1 {
+	font-family: Segoe UI;
+	color: rgb(102,100,99);
+	font-size: 24px;
+	text-align: center;
+}
+h2 {
+	font-family: Segoe UI;
+	color: rgb(102,100,99);
+	font-size: 20px;
+	text-align: center;
+}
+h3 {
+	font-family: Segoe UI;
+	color: rgb(102,100,99);
+	font-size: 20px;
+	padding: 0;
+	margin: 10px;
+	max-width: 80%;
+        align-items: center;
+        margin: auto;
+}
+h4 {
+	font-family: Segoe UI;
+	font-size: 16px;
+	padding: 0;
+	margin: 10px;
+}
+.img {
+	text-align: center;
+}
+#the-filter {
+  	box-sizing: border-box;
+  	width: 100%;
+  	padding: 10px;
+	margin-top: 10px;
+  	margin-bottom: 10px;
+}
+#the-list {
+  	font-family: "Segoe UI";
+  	font-size: 16px;
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+        max-width: 80%;
+        margin: auto;
+        align-items: center;
+}
+#the-list li {
+  	padding: 10px;
+  	border-bottom: 2px solid rgb(237,235,230);
+}
+#the-list2 {
+	font-family: "Segoe UI";
+  	font-size: 16px;
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+        max-width: 80%;
+        margin: auto;
+        align-items: center;
+}
+#the-list2 li {
+  	padding: 10px;
+  	border-bottom: 2px solid rgb(237,235,230);
+}
+#the-list li:hover { 
+	background: rgb(237,235,230);
+}
+#the-list li.hide { 
+	display: none;
+}
+#the-list2 li:hover {
+	background: rgb(237,235,230);
+}

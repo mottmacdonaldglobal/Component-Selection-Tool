@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="DATA/componentselection.css">
+		<script type="text/javascript" src="DATA/componentselection.js"></script>
+	</head>
+	<body>
+		<nav class="navbar background">
+			<ul class="nav-list">
+				<div class="logo">
+					<img src="DATA/logo.jpg">
+				</div>
+				<li>Component Selection Tool</li>
+			</ul>
+		</nav>
+		<section class="firstsection">
+			<div class="box-main">
+				<div class="first-half">
+					<h3>
+						Introduction
+					</h3>
+					<p>
+						The following is a tool developed to aid engineers in appropriate component selection. To do so, a list of pump, valve, and actuator types has been compiled and their key attributes and functionality noted. In the case of valves, the below inputs allow the user to specify criteria regarding the valves desired functionality, generating a refined list of suitable valves for the particular appication. Additional information, including common actuators, can be found within each of the linked pages. Similar pages have been included with information on methods of connection and pump types.
+					</p>
+					<p>
+						This tool has been designed as a guide only. The intention is not to output the exact valve appropriate for the specific application. Instead, this is intended as a first step in component selection, directing the user to possible options. From here, the exact component and material selection will require further engineering judgement in order to complete the selection process.
+					</p>
+				</div>
+			</div>
+		</section>
+		<form>
+			<fieldset class="options">
+				<legend>
+					<h3>
+						Operation
+					</h3>
+				</legend>
+				<p>
+					<input type="checkbox" id="isolation" name="source" value="false" onclick="chkBOX()">
+					<label for="isolation">Isolation</label>
+				</p>
+				<p>
+					<input type="checkbox" id="control" name="source" value="false" onclick="chkBOX()">
+					<label for="control">Control</label>
+				</p>
+				<p>
+					<input type="checkbox" id="relief" name="source" value="false" onclick="chkBOX()">
+					<label for="relief">Relief</label>
+				</p>
+				<p>
+					<input type="checkbox" id="diverting" name="source" value="false" onclick="chkBOX()">
+					<label for="diverting">Diverting</label>
+				</p>
+			</fieldset>
+		</form>
+		<form>
+			<fieldset class="options">
+				<legend>
+					<h3>
+						Actuation
+					</h3>
+				</legend>
+  				<p>
+					<input type="checkbox" id="fastactuation" name="source" value="false" onclick="chkBOX()">
+					<label for="fastactuation">Fast Actuation</label>
+				</p>
+  				<p>
+					<input type="checkbox" id="stop" name="source" value="false" onclick="chkBOX()">
+					<label for="stop">Stop Check Compatible</label>
+				</p>
+			</fieldset>
+		</form>
+		<form>
+			<fieldset class="options">
+				<legend>
+					<h3>
+						Flow
+					</h3>
+				</legend>
+  				<p>
+					<input type="checkbox" id="lowresistance" name="source" value="false" onclick="chkBOX()">
+					<label for="lowresistance">Low Resistance to Flow (minimal head loss)</label>
+				</p>
+  				<p>
+					<input type="checkbox" id="highresistance" name="source" value="false" onclick="chkBOX()">
+					<label for="highresistance">High Resistance to Flow (significant head loss)</label>
+				</p>
+			</fieldset>
+		</form>
+		<form>
+			<fieldset class="options">
+				<legend>
+					<h3>
+						Fluid
+					</h3>
+				</legend>
+				<p>
+					<input type="checkbox" id="sanitary" name="source" value="false" onclick="chkBOX()">
+					<label for="sanitary">Sanitary</label>
+				</p>
+				<p>
+					<input type="checkbox" id="slurry" name="source" value="false" onclick="chkBOX()">
+					<label for="slurry">Slurry / Solids in Suspension</label>
+				</p>
+			</fieldset>
+		</form>
+		<form>
+			<fieldset class="options">
+				<legend>
+					<h3>
+						Finance
+					</h3>
+				</legend>
+				<p>
+					<input type="checkbox" id="opex" name="source" value="false" onclick="chkBOX()">
+					<label for="opex">Low Operational Costs</label>
+				</p>
+				<p>
+					<input type="checkbox" id="capex" name="source" value="false" onclick="chkBOX()">
+					<label for="capex">Low Capital Costs</label>
+				</p>
+			</fieldset>
+		</form>
+		<input type="text" id="the-filter" placeholder="Search components..."/>
+		<ul id="the-list">
+			<li>
+				<h2>
+					Suitable Valves
+				</h2>
+			</li>
+			<li id="valve1"><a href = DATA/Suitable%20Valves/BallValve.html>Ball Valve</a></li>
+			<li id="valve2"><a href = DATA/Suitable%20Valves/ButterflyValve.html>Butterfly Valve</a></li>
+			<li id="valve3"><a href = DATA/Suitable%20Valves/DiaphragmValve.html>Diaphragm Valve</a></li>
+			<li id="valve4"><a href = DATA/Suitable%20Valves/GateValve.html>Gate Valve</a></li>
+			<li id="valve5"><a href = DATA/Suitable%20Valves/GlobeValve.html>Globe Valve</a></li>
+			<li id="valve6"><a href = DATA/Suitable%20Valves/NeedleValve.html>Needle Valve</a></li>
+			<li id="valve7"><a href = DATA/Suitable%20Valves/PinchValve.html>Pinch Valve</a></li>
+			<li id="valve8"><a href = DATA/Suitable%20Valves/PlugValve.html>Plug Valve</a></li>
+			<li>
+				<h2>
+					Specialist Valves
+				</h2>
+			</li>
+			<li><a href = DATA/Specialist%20Valves/CheckValves.html>Check / Non-Return Valves</a></li>
+			<li><a href = DATA/Specialist%20Valves/CryogenicValves.html>Cryogenic Valves</a></li>
+			<li><a href = DATA/Specialist%20Valves/SafetyReliefValves.html>Safety Relief Valves</a></li>
+			<li><a href = DATA/Specialist%20Valves/ThreeWayValves.html>Three-way Valves</a></li>
+			<li>
+				<h2>
+					End Connection Types
+				</h2>
+			</li>
+			<li><a href = DATA/End%20Connection%20Types/FlangedEndConnection.html>Flanged End Connection</a></li>
+			<li><a href = DATA/End%20Connection%20Types/ThreadedEndConnection.html>Threaded End Connection</a></li>
+			<li><a href = DATA/End%20Connection%20Types/WeldedEndConnection.html>Welded End Connections</a></li>
+			<li>
+				<h2>
+					Valve Actuators
+				</h2>
+			</li>
+			<li><a href = DATA/Valve%20Actuators/ElectricActuators.html>Electric Actuators</a></li>
+			<li><a href = DATA/Valve%20Actuators/HydraulicActuators.html>Hydraulic Actuators</a></li>
+			<li><a href = DATA/Valve%20Actuators/ManualActuators.html>Manual Actuators</a></li>
+			<li><a href = DATA/Valve%20Actuators/PneumaticActuators.html>Pneumatic Actuators</a></li>
+			<li>
+				<h2>
+					Kinetic Pumps
+				</h2>
+			</li>
+			<li><a href = DATA/Kinetic%20Pumps/CentrifugalPumps.html>Centrifugal Pumps</a></li>
+			<li><a href = DATA/Kinetic%20Pumps/TurbinePumps.html>Turbine Pumps</a></li>
+			<li>
+				<h2>
+					Positive Displacement Pumps - Rotary
+				</h2>
+			</li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Rotary/CircumferentialPistonPumps.html>Circumferential Piston Pumps</a></li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Rotary/GearPumps.html>Gear Pumps</a></li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Rotary/LobePumps.html>Lobe Pumps</a></li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Rotary/PeristalticPumps.html>Peristaltic Pumps</a></li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Rotary/PistonPumps.html>Piston Pumps</a></li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Rotary/ScrewPumps.html>Screw Pumps</a></li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Rotary/VanePumps.html>Vane Pumps</a></li>
+			<li>
+				<h2>
+					Positive Displacement Pumps - Reciprocating
+				</h2>
+			</li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Reciprocating/DiaphragmPumps.html>Diaphragm Pumps</a></li>
+			<li><a href = DATA/Positive%20Displacement%20Pumps%20-%20Reciprocating/PlungerPumps.html>Plunger Pumps</a></li>
+			<li>
+				<h2>
+					<a href = DATA/References/References.html>References</a>
+				</h2>
+			</li>
+		</ul>
+		<nav class="navbar background">
+			<ul class="nav-list2">
+				<li>Mott MacDonald 2022 | Fraser Belmore</li>
+			</ul>
+		</nav>
+	</body>
+</html>

@@ -1,0 +1,148 @@
+.navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: sticky;
+        top: 0;
+        cursor: pointer;
+}
+.background {
+        background: rgb(102,100,99);
+        background-blend-mode: darken;
+        background-size: cover;
+}
+.nav-list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+}
+.logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.logo img {
+        width: 80px;
+	alight: center;
+}
+.nav-list li {
+        list-style: none;
+	font-family: Segoe UI;
+        padding: 26px 30px;
+	font-size: 24px;
+	text-align: justify;
+}
+.nav-list li a {
+        text-decoration: none;
+        color: white;
+}
+.nav-list li a:hover {
+        color: grey;
+}
+.nav-list2 {
+	list-style: none;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.nav-list2 li {
+	font-family: Segoe UI;
+	font-size: 16px;
+	text-align: center;
+}
+.firstsection {
+        background-color: rgb(237,235,230);
+        height: 360px;
+}
+.box-main {
+        display: flex;
+        justify-content: justify;
+        align-items: center;
+        color: black;
+        max-width: 80%;
+        margin: auto;
+        height: 95%;
+}
+.firsthalf {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+.options {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+p {
+	font-family: Segoe UI;
+	font-size: 16px;
+	margin: 0;
+	margin-top: 0;
+	padding: 10px;
+	padding-bottom: 0;
+	text-align: justify;
+}
+h1 {
+	font-family: Segoe UI;
+	color: rgb(102,100,99);
+	font-size: 24px;
+	text-align: center;
+}
+h2 {
+	font-family: Segoe UI;
+	color: rgb(102,100,99);
+	font-size: 20px;
+	text-align: center;
+}
+h3 {
+	font-family: Segoe UI;
+	color: rgb(102,100,99);
+	font-size: 16px;
+	padding: 0;
+	margin: 10px;
+}
+#the-filter {
+	box-sizing: border-box;
+	width: 100%;
+  	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#the-list {
+  	font-family: "Segoe UI";
+  	font-size:16px;
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+        max-width: 80%;
+        margin: auto;
+        align-items: center;
+}
+#the-list li {
+  	padding: 10px;
+  	border-bottom: 2px solid rgb(237,235,230);
+}
+#the-list2 {
+  	font-family: "Segoe UI";
+  	font-size: 16px;
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+        max-width: 80%;
+        margin: auto;
+        align-items: center;
+}
+#the-list2 li {
+  	padding: 10px;
+	border-bottom: 2px solid rgb(237,235,230);
+}
+#the-list li:hover {
+	background: rgb(237,235,230); 
+}
+#the-list li.hide { 
+	display: none; 
+}
+#the-list2 li:hover { 
+	background: rgb(237,235,230); 
+}
